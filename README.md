@@ -13,7 +13,7 @@ This means that in practice, in generic product description it is not unusual to
 
 Legs in a generic product are represented by columns of related events, and generally correspond to product legs as described in a term-sheet. The values of paying legs are total values of all payments on those legs (regardless of cancellation) and the value of a cancellation leg is the negated total value of cancelled flows on the paying legs.
 
-This is a rather broad definition, covering both trigger-type products and callable products (see https://finpricing.com/lib/EqCallable.html). In practice even for callable products the decision to exercise will depend on the current state of the market, and so these are often modeled by introducing some kind of exercise boundary 6 , i.e. a function of market observables describing a multidimensional boundary beyond which it is optimal to exercise. This has the advantage of separating two problems - making a decision to exercise and calculating the value of the cancellation leg. 
+This is a rather broad definition, covering both trigger-type products and callable products. In practice even for callable products the decision to exercise will depend on the current state of the market, and so these are often modeled by introducing some kind of exercise boundary 6 , i.e. a function of market observables describing a multidimensional boundary beyond which it is optimal to exercise. This has the advantage of separating two problems - making a decision to exercise and calculating the value of the cancellation leg. 
 
 For the most part, the subject of this document is the later of the two, that is, the correct calculation of the value of a cancellation leg. There are special cases where the two can be merged to great advantage that cannot be ignored and these are considered below. We will, except where otherwise stated, assume existence of a predicate Cancellation Condition indicating, when computed for a particular cancellation event, whether cancellation occurred.
 
@@ -26,3 +26,6 @@ Further, we will be concerned only with Bermudan trades, that is, we will assume
 Finally, depending on whether the valuation environment is backwards looking (Monte Carlo) or forward looking (backwards induction engines), value of a cancellation leg is calculated differently and the two cases will be considered separately.
 
 
+Reference:
+
+https://finpricing.com/knowledge.html
