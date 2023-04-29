@@ -28,4 +28,4 @@ Finally, depending on whether the valuation environment is backwards looking (Mo
 
 Reference:
 
-https://finpricing.com/knowledge.html
+https://finpricing.com/FinPricing-ProductBrochure.pdf
